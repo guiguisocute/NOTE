@@ -10,5 +10,6 @@
 ---
 - [ ] english course（one more attention）
 - [ ] 昨日未完成之事
+~~建议曾嘉轩就此放弃宿舍学习的想法~~
 ### Importance
 - [ ] 十二点前睡着
