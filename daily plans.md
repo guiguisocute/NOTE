@@ -75,3 +75,8 @@ nothing
  ---
  ## 2021年5月9日17:20:38
  - [ ]能写多少写多少，重点把网络工程的原理给搞清楚再说
+ ---
+ ## 2021年5月10日10:39:45
+ - [ ] network and dec to learn
+ ### importance
+ - [ ] feel THE feeling
