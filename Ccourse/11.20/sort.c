@@ -59,11 +59,11 @@ void slectsort_ex(int* a,int size,int(*pf)(int,int)){
 
 
 int main(){
-    int a[5] = {4,22,1,897,2};
-    bubblesort_ex(a,5,ascend);
-    bubblesort_ex(a,5,discend);
-    slectsort_ex(a,5,ascend);
-    slectsort_ex(a,5,discend);
+    int a[6] = {4,22,1,897,2,771};
+    bubblesort_ex(a,6,ascend);
+    bubblesort_ex(a,6,discend);
+    slectsort_ex(a,6,ascend);
+    slectsort_ex(a,6,discend);
 
     return 0;
 }

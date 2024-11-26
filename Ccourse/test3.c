@@ -27,6 +27,16 @@ void print_arr3(int* arr, int size){
     printf("\n");
 }
 
+void bubble(int *arr, int size){
+	int i,j;
+	for(int i = size - 2; i >= 0; i--){
+		for(int j = 0; j <= i; j++)
+		if(arr[j] > arr[j + 1]){
+			swap(&arr[j],arr[j+1]);
+		}
+	}
+}
+
 void print_arr4(int* arr, int size){
 	int* ptr;
     for (ptr = arr; ptr < arr + size; ptr++) {
