@@ -1,33 +1,39 @@
 #include <stdio.h>
-void swap_singelpoint(int *pa,int *pb){
-    int temp;
-    temp = *pa;
-    *pa = *pb;
-    *pb = temp;
+
+typedef struct {
+    int value;
+} Element;
+
+int binarySearch(Element nums[], int size, int target) {
+    int left = 0, right = size - 1;
+    
+    while (left <= right) {
+        int mid = (left + right) / 2;
+
+        if (nums[mid].value == target) {
+            return mid;
+        }
+        else if (nums[mid].value < target) {
+            left = mid + 1;
+        }
+        else { // nums[mid].value > target
+            right = mid - 1;
+        }
+    }
+    return -1;
 }
 
-void swap_doublepoint(int **ppa,int **ppb){
-    int* temp;
-    temp = *ppa;
-    *ppa = *ppb;
-    *ppb = temp;
-}
+int main() {
+    Element nums[] = {{1}, {3}, {5}, {7}, {9}};
+    int size = sizeof(nums) / sizeof(nums[0]);
+    int target = 5;
 
-
-
-int main(){
-    int a = 10, b = 20;
-    int a1 = 10, b1 = 20;
-    int* pa = &a1;
-    int* pb = &b1; 
-
-    swap_singelpoint(&a,&b);
-    printf("%d %d\n",a,b);
-    swap_doublepoint(&pa,&pb);
-    printf("%d %d\n",*pa,*pb);
-    printf("%d %d",a1,b1);
+    int result = binarySearch(nums, size, target);
+    if (result != -1) {
+        printf("Element found at index: %d\n", result);
+    } else {
+        printf("Element not found.\n");
+    }
 
     return 0;
-
 }
-

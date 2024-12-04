@@ -56,3 +56,26 @@ void strcat(char s1[100],char s2[100]){
 - 单循环就行，p1p2同时走
 
 ### strlen
+
+### strcmp
+```c
+#include<stdio.h>
+
+int main(){
+    int result = 0;
+    char s1[100] = "12";
+    char s2[100] = "125";
+    char* p1 = s1;
+    char* p2 = s2;
+    while(*p1 || *p2){          //为什么是或更好？如果字符串长度不相等的情况下，便于触摸到数组边界时及时跳出
+    result = *p1 - *p2; 
+    if(result){
+        break;
+    }
+        p1++;
+        p2++;
+    }
+printf("%d",result);
+return 0;
+}
+```
