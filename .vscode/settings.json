@@ -4,6 +4,7 @@
         "math.h": "c",
         "3-3.C": "cpp",
         "stdlib.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "list": "c"
     }
 }

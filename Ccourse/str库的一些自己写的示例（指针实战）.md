@@ -53,7 +53,7 @@ void strcat(char s1[100],char s2[100]){
 ```
 
 ### strcpy
-- 单循环就行，p1p2同时走
+- 单循环就行，p1p2同时走,记得是后参数复制到前参数
 
 ### strlen
 

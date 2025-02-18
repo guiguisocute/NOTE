@@ -1,9 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <filehc.h>
 
 void pc(int(*pa)(int,int),int a,int b){
 	int result;
 	result = pa(a,b);
 	printf("%d\n",result);
+	
 }
 
 int add(int a,int b){
@@ -29,6 +32,7 @@ int main(){
 	pc(minus,7,8);
 	
 	return 0;
+	
 	
 }
 
